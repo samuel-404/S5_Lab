@@ -26,7 +26,7 @@ void main() {
     while (strcmp(opcode, "END") != 0) {
         fprintf(output, "%d\t", locctr);
 
-        if (strcmp(label, "") != 0 && strcmp(label, "") != 0) {
+        if (strcmp(label, "") != 0 && strcmp(label, "**") != 0) {
             fprintf(symtab, "%s\t%d\n", label, locctr);
         }
 
